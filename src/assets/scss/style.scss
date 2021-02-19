@@ -11,7 +11,6 @@ body {
     font-size: 1.4rem;
     line-height: 1.5;
     color: $white;
-
 }
 
 *,
@@ -33,3 +32,6 @@ body {
 @import "blocks/profile";
 @import "blocks/social";
 @import "blocks/btn";
+@import "blocks/stories";
+@import "blocks/add-post";
+
