@@ -45,20 +45,20 @@
 }
 
 .add-post__file {
-    background-color: #EBEBEB url("../images/add-photo.svg") center no-repeat;
+    background: #EBEBEB url("../images/add-photo.svg") center no-repeat;
 
     input {
         display: none;
     }
 
     &:hover {
-        background-color: darken(#EBEBEB, 5%);
+        background-color: darken(#EBEBEB, 10%);
     }
 }
 
 .add-post__send {
     margin-left: 1.5rem;
-   background-color: $blue;
+    background-color: $blue;
 
    &:hover {
     background-color: darken($blue, 5%);

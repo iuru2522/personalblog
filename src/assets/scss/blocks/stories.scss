@@ -1,6 +1,6 @@
 .stories {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 13px;
     grid-auto-rows: 195px;
     margin-bottom: 3rem;
