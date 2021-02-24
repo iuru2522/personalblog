@@ -5,7 +5,7 @@ title: post
 
 <article class="post">
     <div class="post__actions">
-        <a href="#"> go back</a>
+        <a href="index.html"> go back</a>
         <a href="#">
             Share <img сlass="post__actions-icon" src="assets/images/share.svg" alt="share">
         </a>
@@ -26,14 +26,15 @@ title: post
 
     </div>
     <div class="post__content">
-        <div class="post__text">
+        <div class="post__text post__text">
             <h2>Title h2</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Maiores est quod dignissimos vitae. Quas, ex recusandae a molestiae facilis,
                 sunt corporis odit, earum dolorem eum architecto veritatis repellat atque ut?
             </p>
             <h3>Title h3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+            <p>Lorem ipsum <a href="#">dolor sit amet </a>consectetur adipisicing elit.
                 Maiores est quod dignissimos vitae. Quas, ex recusandae a molestiae facilis,
                 sunt corporis odit, earum dolorem eum architecto veritatis repellat atque ut?
             </p>
@@ -43,9 +44,9 @@ title: post
                 Maiores est quod dignissimos vitae. Quas, ex recusandae a molestiae facilis,
                 sunt corporis odit, earum dolorem eum architecto veritatis repellat atque ut?
             </p>
-
-            <img src="" alt="">
-
+            <p>
+                <img src="assets/images/image.jpg" alt="">
+            </p>
             <ul>
                 <li>item</li>
                 <li>item</li>
@@ -53,6 +54,7 @@ title: post
 
             </ul>
             <ol>
+                <li>item</li>
                 <li>item</li>
                 <li>item</li>
             </ol>
@@ -64,12 +66,108 @@ title: post
                     <td>3</td>
                 </tr>
             </table>
+            <p>
+                <span class="fr-video">
+                    <iframe src="https://www.youtube.com/embed/uvdpUFhLfng" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </span>
+            </p>
+        </div><!-- /.post__text -->
+        <div class="related">
+            <h3 class="post__subtitle">Interesting to read</h3>
+            <ul class="related__list">
+                <li class="related__list-item">
+                    <h4 class="related__list-title">
+                        <a href="3">FrontEn FrontEndConf2021 how it was
+                        </a>
+                    </h4>
+                    <time class="related__list-date" datetime="2020-06-21">21.06.2020</time>
+                </li>
+                <li class="related__list-item">
+                    <h4 class="related__list-title">
+                        <a href="3">FrontEndConf2021 how it was</a>
+                    </h4>
+                    <time class="related__list-date" datetime="2020-06-21">21.06.2020</time>
+                </li>
+                <li class="related__list-item">
+                    <h4 class="related__list-title">
+                        <a href="3">FrontEndConf2021 how it was</a>
+                    </h4>
+                    <time class="related__list-date" datetime="2020-06-21">21.06.2020</time>
+                </li>
+                <li class="related__list-item">
+                    <h4 class="related__list-title">
+                        <a href="3">FrontEndConf2021 how it was</a>
+                    </h4>
+                    <time class="related__list-date" datetime="2020-06-21">21.06.2020</time>
+                </li>
 
+            </ul>
 
+        </div><!-- /.related -->
 
+        <div class="comments">
+            <h3 class="post__subtitle">Обсуждение</h3>
 
+            <form class="form" action="/" method="post">
+                <div class="form__group">
+                    <textarea class="form__control form__control--textarea" name="comment-text"
+                        placeholder="Comment text">
+            </textarea>
+                    <span class="form__line"></span>
+                </div>
+                <button class="btn btn--blue btn--rounded btn--sm" type="submit">Submit</button>
+            </form>
+            <ul class="comments">
+                <li class="comments__item">
+                    <div class="comments__header">
+                        <img class="comments__avatar" src="https://placehold.it/30" alt="">
+
+                        <div class="comments__author">
+                            <div class="comments__name">
+                                Iurii Manastyrskyi
+                            </div>
+                            <time class="comments__pubdate" datetime="2020-06-21 19:21"> 1 week ago
+                                Iurii Manastyrskyi
+                            </time>
+                        </div>
+                    </div>
+
+                    <div class="comments__text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda asperiores, nulla quae necessitatibus, voluptatem dolorem perspiciatis repudiandae
+                        eveniet enim voluptatibus fugiat laboriosam porro error,
+                        facilis soluta deleniti hic. Obcaecati, doloremque?</div>
+                    <button class="comments__reply" type="button">Reply</button>
+
+                    <ul class="comments">
+                        <li class="comments__item">
+                            <div class="comments__header">
+                                <img class="comments__avatar" src="https://placehold.it/30" alt="">
+
+                                <div class="comments__author">
+                                    <div class="comments__name">
+                                        Iurii Manastyrskyi
+                                    </div>
+                                    <time class="comments__pubdate" datetime="2020-06-21 19:21"> 1 week ago
+                                        Iurii Manastyrskyi
+                                    </time>
+                                </div>
+                            </div>
+
+                            <div class="comments__text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Assumenda asperiores, nulla quae necessitatibus, voluptatem dolorem perspiciatis
+                                repudiandae
+                                eveniet enim voluptatibus fugiat laboriosam porro error,
+                                facilis soluta deleniti hic. Obcaecati, doloremque?</div>
+                            <button class="comments__reply" type="button">Reply</button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-
-    </div>
-
+    </div><!-- /.post__content -->
 </article><!-- /.post -->
