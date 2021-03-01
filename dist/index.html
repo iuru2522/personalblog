@@ -20,7 +20,7 @@
     <!-- <body class="show-sidebar"> -->
         <body>
 
-    <div class="page">
+    <div class="page" id="page">
 
         <!--Header-->
         <header class="header">
@@ -54,7 +54,7 @@
                     </ul>
                 </nav>
         
-                <button class="burger active" type="button">
+                <button class="burger active" type="button" id="sidebarToggle">
                     <span>Open navigation</span>
                 </button>
             </div>
@@ -75,7 +75,7 @@
             </div>
         </header>
         <!--Sidebar-->
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
             <div class="sidebar__header">
                 <img src="assets/images/sidebar-header.jpg" alt="">
             </div>
@@ -159,7 +159,7 @@
         
             <div class="sidebar__footer">
                 <a class="btn btn--red" href="works.html">My works</a>
-                <button class="btn btn--blue" type="buttton">Text me</button>
+                <button class="btn btn--blue" type="buttton" data-modal="contact-modal">Text me</button>
             </div>
         </aside>
         <!--Main-->
@@ -167,7 +167,7 @@
             <div class="container">
                 
                 <!-- Stories -->
-                <div class="stories">
+                <div class="stories" data-modal="story-modal">
                     <div class="stories__item">
                         <img class="stories__preview" src="assets/images//stories/story-1.jpg" alt="">
                         <div class="stories__title">Relax</div>
@@ -194,7 +194,7 @@
                 <!-- Add post -->
                 <div class="add-post">
                     <form class="add-post__form" action="/" method="post">
-                        <textarea class="add-post__textarea" name="post-text" placeholder="Type some text"></textarea>
+                        <textarea class="add-post__textarea" name="post-text" placeholder="Type some text" data-autoresize></textarea>
                 
                         <div class="add-post__form-actions">
                             <label class="add-post__file" for="add-post-file">
@@ -348,89 +348,88 @@
 
     </div>
 
-    <!-- <div class="modal">
-    <video class="modal__video" src="" poster="https://via.placeholder.com/420x580"></video>
-</div> -->
-    <!-- <div class="modal"> 
-    <div class="modal__content modal__content--contact">
-
-        <form class="form" action="/" method="post">
-            <div class="form__group form__group--md">
-                <input class="form__control" type="text" placeholder="Your name">
-                <span class="form__line"></span>
-            </div>
-
-            <div class="form__group form__group--md">
-                <input class="form__control" type="email" placeholder="Email">
-                <span class="form__line"></span>
-            </div>
-
-            <div class="form__group form__group--md">
-                <textarea class="form__control form__control--textarea" placeholder="some text"></textarea>
-                <span class="form__line"></span>
-            </div>
-            <div class="for__footer">
+    <div class="modal" id="story-modal">
+        <div class="modal__content modal__content--story">
+            <video class="modal__video" src="" poster="https://via.placeholder.com/420x580"></video>
+        </div>
+    </div>    <div class="modal" id="contact-modal"> 
+        <div class="modal__content modal__content--contact">
+    
+            <form class="form" action="/" method="post">
                 <div class="form__group form__group--md">
-                    <button class="btn btn--blue btn--rounded btn--sm" type="submit">Send</button>
+                    <input class="form__control" type="text" placeholder="Your name">
+                    <span class="form__line"></span>
                 </div>
-            </div>
-        </form>
-
-        <ul class="modal__footer">
-            <li>
-                e-mail: <a href="mailto:info@mywebsite.com">info@mywebsite.com
-                </a>
-            </li>
-            <li>
-                тел: <a href="tel:+94323285622">+943-232-856-22
-                </a>
-            </li>
-        </ul>
-
-        <button class="modal__close" type="button">
-            <img src="assets/images/close.svg" alt="Close">
-        </button>
-
-
-
-
-    </div><!-- /.modal__content -->
-</div><!-- /.modal --> -->
-    <!-- <div class="modal">
-    <div class="modal__content">
-        <button class="modal__close" type="button">
-            <img src="assets/images/close.svg" alt="Close">
-        </button>
-
-        <ul class="social">
-
-            <li class="social__item">
-                <a class="social__link" href="#">
-                    <img src="assets/images/share/facebook.svg">
-                </a>
-            </li>
-
-            <li class="social__item">
-                <a class="social__link" href="#">
-                    <img src="assets/images/share/vk.svg">
-                </a>
-            </li>
-
-            <li class="social__item">
-                <a class="social__link" href="#">
-                    <img src="assets/images/share/twitter.svg">
-                </a>
-            </li>
-
-            <li class="social__item">
-                <a class="social__link" href="#">
-                    <img src="assets/images/share/copy2.svg">
-                </a>
-            </li>
-        </ul>
-    </div><!-- /.modal__content -->
-</div><!-- /.modal --> -->
-    <!--JS-->
+    
+                <div class="form__group form__group--md">
+                    <input class="form__control" type="email" placeholder="Email">
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__group form__group--md">
+                    <textarea class="form__control form__control--textarea" placeholder="some text"></textarea>
+                    <span class="form__line"></span>
+                </div>
+                <div class="for__footer">
+                    <div class="form__group form__group--md">
+                        <button class="btn btn--blue btn--rounded btn--sm" type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
+    
+            <ul class="modal__footer">
+                <li>
+                    e-mail: <a href="mailto:info@mywebsite.com">info@mywebsite.com
+                    </a>
+                </li>
+                <li>
+                    тел: <a href="tel:+94323285622">+943-232-856-22
+                    </a>
+                </li>
+            </ul>
+    
+            <button class="modal__close" type="button">
+                <img src="assets/images/close.svg" alt="Close">
+            </button>
+    
+    
+    
+    
+        </div><!-- /.modal__content -->
+    </div><!-- /.modal -->    <div class="modal">
+        <div class="modal__content">
+            <button class="modal__close" type="button">
+                <img src="assets/images/close.svg" alt="Close">
+            </button>
+    
+            <ul class="social">
+    
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img src="assets/images/share/facebook.svg">
+                    </a>
+                </li>
+    
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img src="assets/images/share/vk.svg">
+                    </a>
+                </li>
+    
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img src="assets/images/share/twitter.svg">
+                    </a>
+                </li>
+    
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img src="assets/images/share/copy2.svg">
+                    </a>
+                </li>
+            </ul>
+        </div><!-- /.modal__content -->
+    </div><!-- /.modal -->    <!--JS-->
     <script src="assets/js/app.js"></script>
 </body>
 
